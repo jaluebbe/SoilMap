@@ -16,14 +16,14 @@ For the northern hemisphere, minimum temperatures are assumed as lowest night te
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1435938.svg)](https://doi.org/10.5281/zenodo.1435938)
 
-### Soil pH in H2O at different depths:
+### Soil pH in H2O at different depths (LandGIS):
 
-not implemented yet.
+The soil pH value in H2O is provided for a depth of 100cm.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2525664.svg)](https://doi.org/10.5281/zenodo.2525664)
 
-### Soil water content at different depths:
+### Soil water content at different depths (LandGIS):
 
-not implemented yet.
+The soil water content (field capacity, 33kPa suction) is provided for a depth of 100cm. The unit is volumetric percent.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2784001.svg)](https://doi.org/10.5281/zenodo.2784001)
