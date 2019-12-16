@@ -12,7 +12,7 @@ gdal
 
 ### Long-term MODIS Land Surface Temperature:
 
-Minimum temperatures are assumed as lowest night temperatures in January, maximum temperatures as highest day temperatures in July. Day-night differences are taken for April. Further description of the scaling was found in the user guide at https://modis.gsfc.nasa.gov/data/dataprod/mod11.php .
+For the northern hemisphere, minimum temperatures are assumed as lowest night temperatures in January, maximum temperatures as highest day temperatures in July. Day-night differences are taken for April. Further description of the scaling was found in the user guide at https://modis.gsfc.nasa.gov/data/dataprod/mod11.php .
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1435938.svg)](https://doi.org/10.5281/zenodo.1435938)
 
