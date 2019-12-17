@@ -17,7 +17,7 @@ sph = SoilPHinH2O()
 m_lst = ModisLST()
 
 def get_environmental_data(lat, lon):
-    result = {}
+    result = {'latitude': lat, 'longitude': lon}
     result['altitude_m'] = gebco_2019.get_height(lat, lon)['altitude_m']
     result['annual_precip_cm'] = precip.get_data_at_position(lat, lon)[
         'annual_precip_cm']
