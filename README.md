@@ -6,7 +6,11 @@ This repository facilitates access to several soil related data sources like tem
 
 ### conda/apt
 
-gdal 
+gdal h5py pandas xlrd gunicorn
+
+### pip
+
+pygeodesy geojson uvicorn
 
 ## Data Sources
 
