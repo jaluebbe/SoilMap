@@ -27,5 +27,8 @@ def get_environmental_data(lat, lon):
     result['min_surface_temp'] = temperatures['min_surface_temp']
     result['max_surface_temp'] = temperatures['max_surface_temp']
     result['daily_surface_temp_range'] = temperatures['daily_surface_temp_range']
-    result['surface_information'] = gc.get_data_at_position(lat, lon)
+    surface_information = gc.get_data_at_position(lat, lon)
+    result['surface_value'] = surface_information['value']
+    result['surface_label'] = surface_information['label']
+    result['surface_color'] = surface_information['color']
     return result
