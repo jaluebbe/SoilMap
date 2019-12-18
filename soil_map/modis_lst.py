@@ -19,13 +19,22 @@ class ModisLST:
             'clm_lst_mod11a2.apr.daynight_m_1km_s0..0cm_2000..2017_v1.0.tif'))
 
     def get_min_surface_temp(self, lat, lon):
-        return self.gth_t_low.get_value_at_position(lat, lon) * 0.02 - 273.15
+        data = self.gth_t_low.get_value_at_position(lat, lon)
+        if data is not None:
+            return data * 0.02 - 273.15
+        return float('NaN')
 
     def get_max_surface_temp(self, lat, lon):
-        return self.gth_t_high.get_value_at_position(lat, lon) * 0.02 - 273.15
+        data = self.gth_t_high.get_value_at_position(lat, lon)
+        if data is not None:
+            return data * 0.02 - 273.15
+        return float('NaN')
 
     def get_surface_temp_range(self, lat, lon):
-        return self.gth_t_range.get_value_at_position(lat, lon) * 0.02
+        data = self.gth_t_range.get_value_at_position(lat, lon)
+        if data is not None:
+            return data * 0.02
+        return float('NaN')
 
     def get_data_at_position(self, lat, lon):
         return {
