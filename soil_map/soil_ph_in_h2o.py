@@ -15,7 +15,10 @@ class SoilPHinH2O:
             'sol_ph.h2o_usda.4c1a2a_m_250m_b100..100cm_1950..2017_v0.2.tif'))
 
     def get_soil_ph_in_h2o(self, lat, lon):
-        return self.gth_soil_ph_in_h2o.get_value_at_position(lat, lon) / 10
+        data = self.gth_soil_ph_in_h2o.get_value_at_position(lat, lon)
+        if data is not None:
+            return data / 10
+        return float('NaN')
 
     def get_data_at_position(self, lat, lon):
         return {
